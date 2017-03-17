@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="#fcfbf9"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/myBlueTop">
+        <ImageView
+            android:id="@+id/publish_persion_iv_icon_last"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon_last"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"/>
+
+
+        <TextView
+            android:id="@+id/publish_persion_tv_pager_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="内容"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/textSize_title"/>
+    </RelativeLayout>
+    <com.gongzetao.loop.view.RefreshListView
+        android:id="@+id/publish_persion_lv_comment_list"
+        android:layout_width="match_parent"
+        android:listSelector="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <View
+        style="@style/breakLine"
+        android:layout_width="match_parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/publish_persion_rl_transmit"
+            android:layout_width="0dp"
+            android:onClick="onclick"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/publish_persion_iv_transmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:src="@drawable/sel_icon_trends_transmit" />
+
+            <TextView
+                android:id="@+id/publish_persion_tv_transmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@+id/publish_persion_iv_transmit" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/publish_persion_rl_comment"
+            android:layout_width="0dp"
+            android:onClick="onclick"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/publish_persion_iv_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:src="@drawable/sel_icon_trends_comment" />
+
+            <TextView
+                android:id="@+id/publish_persion_tv_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@+id/publish_persion_iv_comment" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/publish_persion_rl_praise"
+            android:layout_width="0dp"
+            android:onClick="onclick"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/publish_persion_iv_praise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/sel_icon_trends_praise" />
+
+            <TextView
+                android:id="@+id/publish_persion_tv_praise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@+id/publish_persion_iv_praise" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

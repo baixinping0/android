@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 透明色-->
+    <color name="transparent">@android:color/transparent</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- 登录界面和注册界面背景颜色-->
+    <color name="myGray_background">#f8f8f8</color>
+    <!-- 搜索框背景颜色-->
+    <color name="myGray_lookupFrame">#293e6a</color>
+    <!-- 按钮颜色-->
+    <color name="myBlueButton">#0A99FF</color>
+    <!--主界面顶端颜色   -->
+    <color name="myTop">#5290c3</color>
+    <color name="myBlueTop">#f5f0e9</color>
+
+    <!-- 分割线线条颜色-->
+    <color name="lineColor">#f5f0e9</color>
+
+    <color name="statusbars">#01464d</color>
+
+    <color name="lineColorDeep">#fbbb</color>
+
+    <!-- 字体颜色-->
+    <color name="textColor_blue">#1778d9</color>
+
+    <!-- 登录界面背景颜色-->
+    <color name="logonBackground">#3b5998</color>
+    <color name="black">#000</color>
+
+    <color name="remind">#5480b0</color>
+    <color name="main_pager_attention">#aaa</color>
+    <color name="white">#ffffff</color>
+
+    <!--f5f0e9、e5e2ac、a7a4a0、4da885-->
+
+    <color name="content_background">#fbfcf9</color>
+
+
+    <!--推荐页卡片颜色-->
+    <color name="chuzu">#f5f0e9</color>
+    <color name="chushou">#e5e2ac</color>
+    <color name="hanju">#a7a4a0</color>
+    <color name="youxi">#4da885</color>
+    <color name="dongman">#f5f0e9</color>
+    <color name="yundong">#e5e2ac</color>
+    <color name="yinyue">#a7a4a0</color>
+    <color name="dianying">#4da885</color>
+    <color name="mingxing">#f5f0e9</color>
+    <color name="dianshiju">#e5e2ac</color>
+    <color name="jiaxiang">#a7a4a0</color>
+    <color name="xuexi">#4da885</color>
+    <color name="huodong">#deb44b</color>
+    <color name="qita">#e5e2ac</color>
+
+</resources>

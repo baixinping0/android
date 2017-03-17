@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Loop</string>
+    <string name="deletetThisChat">删除该聊天</string>
+    <integer name="SINGLE_IMAGE_MODE_RELATIVE_TO_SELF">1</integer>
+    <integer name="SINGLE_IMAGE_MODE_SPECIFIED_RATIO">2</integer>
+</resources>

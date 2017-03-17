@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/fragment_photo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.vs.fragment.PhotoViewFragment"
+    android:layout_gravity="center">
+    <uk.co.senab.photoview.PhotoView
+        android:id="@+id/photoIm"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitStart" />
+
+    <com.gongzetao.loop.view.RoundProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:visibility="invisible"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

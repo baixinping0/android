@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <com.gongzetao.loop.view.CircleImageView
+            android:id="@+id/publish_comment_iv_photo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/persion_default_photo" />
+
+        <LinearLayout
+            android:id="@+id/publish_comment_ll_name_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/publish_comment_iv_photo"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/publish_comment_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="  "/>
+            <TextView
+                android:id="@+id/publish_comment_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12-12 00:00:00"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/publish_comment_tv_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/sel_icon_trends_praise"
+            android:src="@drawable/sel_icon_trends_praise"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/publish_comment_tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="@dimen/textSize_16"
+        android:background="@drawable/sel_pressed_text_background"
+        android:textColor="@color/black"
+        android:text="text"/>
+
+    <ImageView
+        android:id="@+id/publish_comment_iv_picture"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="60dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <View
+        android:id="@+id/publish_comment_break_line"
+        style="@style/breakLine"
+        android:layout_width="match_parent"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"/>
+</LinearLayout>

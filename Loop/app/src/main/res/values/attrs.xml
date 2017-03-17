@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 自定义圆形ImageView控件属性-->
+    <declare-styleable name="roundedimageview">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color"></attr>
+    </declare-styleable>
+
+    <!-- 自定义RadioButton控件属性-->
+    <declare-styleable name="MyRadioButton">
+        <attr name="rbDrawableTopSize" format="dimension"/>
+        <attr name="rbDrawableTop" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircularImage">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="LGNineGrideView">
+        <attr name="space" format="dimension"/>
+        <attr name="singleImageRatio" format="float"/>
+        <attr name="singleImageWidthRatioToParent" format="float"/>
+        <attr name="singleImageRatioMode" format="integer"/>
+    </declare-styleable>
+</resources>

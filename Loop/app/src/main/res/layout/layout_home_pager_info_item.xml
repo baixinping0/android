@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gongzetao.loop.view.RevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/persion_ll_persion_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:paddingTop="5dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.gongzetao.loop.view.CircleImageView
+        android:id="@+id/info_item_iv_photo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/persion_default_photo" />
+
+    <LinearLayout
+        android:layout_toRightOf="@+id/info_item_iv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="2dp">
+
+            <TextView
+                android:id="@+id/info_item_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:textColor="#000"
+                android:text="名字"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/info_item_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="2dp"
+                android:text="时间"
+                android:paddingRight="8dp"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/info_item_tv_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/info_item_remind_message"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/shape_message_remind"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:text="2"/>
+        </RelativeLayout>
+    </LinearLayout>
+    </RelativeLayout>
+
+</com.gongzetao.loop.view.RevealLayout>

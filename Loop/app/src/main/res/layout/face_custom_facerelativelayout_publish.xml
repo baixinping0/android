@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gongzetao.loop.facedutils.FaceRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FaceRelativeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <include layout="@layout/face_custom_facerelativelayout_face_pager"/>
+</com.gongzetao.loop.facedutils.FaceRelativeLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/content_background">
+        <RelativeLayout
+            android:id="@+id/persion_data_rl_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <TextView
+                style="@style/itemStyle"
+                android:text="头像"/>
+            <!--com.gongzetao.loop.view.CircleImageView-->
+            <com.gongzetao.loop.view.CircleImageView
+                android:id="@+id/persion_data_iv_photo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/persion_default_photo"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <View
+            style="@style/breakLine"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+        <RelativeLayout
+            android:id="@+id/persion_data_rl_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#fff">
+            <TextView
+                style="@style/itemStyle"
+                android:text="姓名" />
+
+            <TextView
+                android:id="@+id/persion_data_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="龚泽涛"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dp"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <View
+            style="@style/breakLine"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+        <RelativeLayout
+            android:id="@+id/persion_data_rl_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#fff">
+            <TextView
+                style="@style/itemStyle"
+                android:text="手机号"/>
+
+            <TextView
+                android:id="@+id/persion_data_tv_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15812345678"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+        <View
+            style="@style/breakLine"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+        <RelativeLayout
+            android:id="@+id/persion_data_rl_attestation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#fff">
+            <TextView
+                style="@style/itemStyle"
+                android:text="认证"/>
+
+            <TextView
+                android:id="@+id/persion_data_tv_attestation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="西安石油大学"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_margin="10dp"
+       android:layout_marginTop="20dp"
+       android:background="@drawable/content_background">
+       <RelativeLayout
+           android:id="@+id/persion_data_rl_sex"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:background="#fff">
+           <TextView
+               style="@style/itemStyle"
+               android:text="性别" />
+
+           <TextView
+               android:id="@+id/persion_data_tv_sex"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="男"
+               android:layout_centerVertical="true"
+               android:layout_marginRight="50dp"
+               android:layout_alignParentRight="true" />
+       </RelativeLayout>
+       <View
+           style="@style/breakLine"
+           android:layout_height="1dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"/>
+       <RelativeLayout
+           android:id="@+id/persion_data_rl_born_time"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:background="#fff">
+           <TextView
+               style="@style/itemStyle"
+               android:text="出生日期" />
+
+           <TextView
+               android:id="@+id/persion_data_tv_born_time"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text=""
+               android:layout_centerVertical="true"
+               android:layout_marginRight="50dp"
+               android:layout_alignParentRight="true" />
+       </RelativeLayout>
+   </LinearLayout>
+</LinearLayout>

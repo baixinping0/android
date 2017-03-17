@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.gongzetao.loop.view.NoScrollViewPager
+        android:id="@+id/home_vp_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lineColor" />
+
+    <RadioGroup
+        android:id="@+id/home_rg_botton_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/home_rb_botton_icon_home"
+            style="@style/home_icon_bottom"
+            android:checked="true"
+            android:drawableTop="@drawable/sel_home_icon_homepager"
+            android:text="主页" />
+
+        <RadioButton
+            android:id="@+id/home_rb_botton_icon_friend"
+            style="@style/home_icon_bottom"
+            android:drawableTop="@drawable/sel_home_icon_friens"
+            android:text="好友" />
+
+        <RadioButton
+            android:id="@+id/home_rb_botton_icon_info"
+            style="@style/home_icon_bottom"
+            android:drawableTop="@drawable/sel_home_icon_info"
+            android:text="消息" />
+
+        <RadioButton
+            android:id="@+id/home_rb_botton_icon_persion"
+            style="@style/home_icon_bottom"
+            android:drawableTop="@drawable/sel_home_icon_persion"
+            android:text="个人" />
+    </RadioGroup>
+</LinearLayout>

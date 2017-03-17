@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/persion_ll_persion_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <com.gongzetao.loop.view.CircleImageView
+            android:id="@+id/publish_comment_header_iv_photo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/persion_default_photo" />
+
+        <LinearLayout
+            android:id="@+id/publish_comment_ll_name_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/publish_comment_header_iv_photo"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/publish_comment_header_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="  "/>
+            <TextView
+                android:id="@+id/publish_comment_header_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12-12 00:00:00"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/publish_comment_header_tv_transmit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="@dimen/textSize_16"
+        android:textColor="@color/black"
+        android:text="text"/>
+    <LinearLayout
+        android:id="@+id/publish_comment_header_ll_transmit_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/publish_comment_header_tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="@dimen/textSize_16"
+            android:textColor="@color/black"
+            android:text="text"/>
+        <com.gongzetao.loop.view.lGNineGrideView.LGNineGrideView
+            android:id="@+id/publish_comment_header_gv_picture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:verticalSpacing="20dp"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+    <View
+        style="@style/breakLine"
+        android:layout_height="20dp"/>
+</LinearLayout>

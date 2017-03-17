@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/myBlueTop">
+        <ImageView
+            android:id="@+id/home_iv_icon_last"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon_last"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"/>
+        <EditText
+            android:id="@+id/home_et_lookup_frame"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:background="@drawable/lookup_frame_background_main"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="5dp"
+            android:hint="搜索"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:clickable="true"
+            android:drawableLeft="@drawable/icon_lookup"/>
+
+        <TextView
+            android:id="@+id/home_tv_pager_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:visibility="invisible"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/textSize_title"/>
+
+        <ImageView
+            android:id="@+id/home_iv_icon_add"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/icon_add"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/home_fl_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+</LinearLayout>

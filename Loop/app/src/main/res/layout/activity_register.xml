@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:orientation="vertical"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:gravity="center">
+    <RelativeLayout
+        android:id="@+id/register_icon"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="40dp"
+            android:textColor="@color/white"
+            android:text="loop"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/register_icon"
+        android:orientation="vertical">
+
+        <!--<com.gongzetao.loop.view.CircleImageView-->
+            <!--android:id="@+id/register_iv_photo"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:onClick="onclick"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:src="@drawable/persion_default_photo" />-->
+
+        <com.gongzetao.loop.view.sortlistview.EmailAutoCompleteTextView
+            android:id="@+id/register_et_mail"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="邮箱号"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColorHint="@color/white"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"/>
+
+
+            <EditText
+                android:id="@+id/register_et_name"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="姓名"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColorHint="@color/white"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/register_et_password"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="密码"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColorHint="@color/white"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/register_et_table"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="标签"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColorHint="@color/white"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:maxLength="14" />
+
+        <TextView
+            android:id="@+id/register_bt_register"
+            android:layout_width="80dp"
+            android:layout_height="@dimen/inputFrameHeight"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:onClick="onclick"
+            android:textColor="#fff"
+            android:text="注册" />
+
+        <TextView
+            android:id="@+id/register_tv_last"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:onClick="onclick"
+            android:text="已有账户了吗？" />
+    </LinearLayout>
+
+
+</RelativeLayout>

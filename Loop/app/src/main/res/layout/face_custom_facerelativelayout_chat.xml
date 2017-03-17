@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gongzetao.loop.facedutils.FaceRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FaceRelativeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/chat_ll_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/iv_icon_emoticon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:onClick="onclick"
+            android:src="@drawable/icon_emoticon_chat" />
+        <EditText
+            android:id="@+id/et_message_frame"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/chat_message_frame_background" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/chat_iv_icon_add"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:onClick="onclick"
+                android:src="@drawable/icon_add_chat" />
+
+            <TextView
+                android:id="@+id/chat_tv_send"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/icon_chat_send"
+                android:gravity="center"
+                android:onClick="onclick"
+                android:text="发送" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/face_custom_facerelativelayout_face_pager"/>
+
+</com.gongzetao.loop.facedutils.FaceRelativeLayout>
